@@ -1,7 +1,7 @@
-import { IUserRepository } from "../../domain/repository-ports/UserRepository";
-import { UserRequest, UserResponse } from "../../domain/dtos/CreateUser.dto";
+import { IUserRepository } from "../../domain/repository-ports/user-repository";
+import { UserRequest, UserResponse } from "../../domain/dtos/create-user.dto";
 
-import type { User } from "../../domain/entities/UserEntity";
+import type { User } from "../../domain/entities/user-entity";
 
 export class CreateUserUseCase {
     constructor(private userRepository: IUserRepository) {}

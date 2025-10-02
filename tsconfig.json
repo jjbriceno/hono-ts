@@ -12,6 +12,11 @@
     "jsxImportSource": "hono/jsx",
     "types": [
         "./worker-configuration.d.ts"
-    ]
+    ],
+    "paths": {
+      "@features/*": ["./src/features/*"],
+      "@transaction/*": ["./src/features/transaction/*"],
+      "@user/*": ["./src/features/user/*"],
+    }
   },
 }

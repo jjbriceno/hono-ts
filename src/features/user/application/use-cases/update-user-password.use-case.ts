@@ -1,5 +1,5 @@
-import type { IUserRepository } from "../../domain/repository-ports/UserRepository";
-import type { UpdateUserPassword } from "../../domain/dtos/UpdateUserPassword.dto";
+import type { IUserRepository } from "../../domain/repository-ports/user-repository";
+import type { UpdateUserPassword } from "../../domain/dtos/update-user-password.dto";
 
 export class UpdateUserPasswordUseCase {
     constructor(private userRepository: IUserRepository) {}

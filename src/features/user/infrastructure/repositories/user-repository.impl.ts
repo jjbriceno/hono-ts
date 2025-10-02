@@ -1,7 +1,7 @@
-import type { User } from "../../domain/entities/UserEntity";
-import type { UpdateUserPassword } from "../../domain/dtos/UpdateUserPassword.dto";
+import type { User } from "../../domain/entities/user-entity";
+import type { UpdateUserPassword } from "../../domain/dtos/update-user-password.dto";
 
-import { IUserRepository } from "../../domain/repository-ports/UserRepository";
+import { IUserRepository } from "../../domain/repository-ports/user-repository";
 
 export class UserRepository implements IUserRepository {
     save(user: User): Promise<void> {

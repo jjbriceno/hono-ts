@@ -1,10 +1,10 @@
 import { Hono } from "hono";
 
-import { UserRepository } from "../infrastructure/repositories/UserRepository.impl";
-import { CreateUserUseCase } from "../application/use-cases/CreateUser.use-case";
-import { UpdateUserPasswordUseCase } from "../application/use-cases/UpdateUserPassword.use-case";
+import { UserRepository } from "../infrastructure/repositories/user-repository.impl";
+import { CreateUserUseCase } from "../application/use-cases/create-user.use-case";
+import { UpdateUserPasswordUseCase } from "../application/use-cases/update-user-password.use-case";
 
-import type { UserRequest } from "../domain/dtos/CreateUser.dto";
+import type { UserRequest } from "../domain/dtos/create-user.dto";
 
 const userRoutes = new Hono();
 

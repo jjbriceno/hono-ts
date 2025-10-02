@@ -1,6 +1,6 @@
 import { Hono } from "hono";
-import userRoutes from "./features/users/api/User.routes";
-import transactionRoutes from "./features/transactions/api/Transaction.routes";
+import userRoutes from "./features/user/api/user.routes";
+import transactionRoutes from "./features/transaction/api/transaction.routes";
 
 const app = new Hono<{ Bindings: CloudflareBindings }>();
 

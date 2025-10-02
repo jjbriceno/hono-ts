@@ -1,6 +1,7 @@
-import type { CreateTransactionRequest, TransactionResponse } from "../../domain/dtos/CreateTransaction.dto";
+import type { TransactionResponse } from "@features/transaction/domain/dtos/transaction-response";
+import type { CreateTransactionRequest } from "@features/transaction/domain/dtos/create-transaction.dto";
 
-import { ITransactionRepository } from "../../domain/repository-ports/TransactionRepository";
+import { ITransactionRepository } from "@features/transaction/domain/repository-ports/transaction.repository";
 
 export class CreateTransactionUserCase {
     constructor(private transactionRepository: ITransactionRepository){}

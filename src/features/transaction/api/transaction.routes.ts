@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 
-import { TransactionRepository } from "../infrastructure/repositories/TransactionRepository.impl";
-import { CreateTransactionUserCase } from "../application/use-cases/CreateTransaction.user-case";
+import { TransactionRepository } from "@features/transaction/infrastructure/repositories/transaction.repository.impl";
+import { CreateTransactionUserCase } from "@features/transaction/application/use-cases/create-transaction.user-case";
 
 const transactionRoutes = new Hono();
 
