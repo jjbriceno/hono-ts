@@ -14,7 +14,7 @@ export class CreateTransactionUserCase {
 
         const transaction: CreateTransactionRequest = {
             id: "1",
-            amout: request.amount!,
+            amount: request.amount!,
             description: request.description,
             date: new Date,
         }
